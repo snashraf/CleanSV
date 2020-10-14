@@ -1,0 +1,4 @@
+               sh runSomaticDelly.sh COLO829/COLO829T_dedup.realigned.bam COLO829/COLO829R_dedup.realigned.
+               conda install -c bioconda bcftools
+               bcftools view -f 'PASS' COLO829_SV.bcf > COLO829_SV_PASS.vcf # This will just extract tha pass variants
+               
